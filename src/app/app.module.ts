@@ -9,15 +9,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
-import {MatExpansionModule} from '@angular/material/expansion';
-import { MessagesComponent } from './components/messages/messages.component'
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatIconModule } from '@angular/material/icon';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatCardModule} from '@angular/material/card';
+
+import { FlexLayoutModule } from '@angular/flex-layout'
+
+import { MessagesComponent } from './components/messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './components/pages/dashboard/dashboard.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +34,12 @@ import { MessagesComponent } from './components/messages/messages.component'
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatIconModule,
+    MatTooltipModule,
+    MatCardModule,
+    FlexLayoutModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
