@@ -3,7 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 const routes: Routes = [
-  { path: 'dashboard', component: DashboardComponent},
+  // { path: 'dashboard', component: DashboardComponent},
+
+  // Ao utilizar Lazy-Load, não é necessário adicionar o nome da página
+  { path: '', component: DashboardComponent},
 ]
 
 @NgModule({
